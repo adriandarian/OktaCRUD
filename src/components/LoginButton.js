@@ -41,7 +41,7 @@ class LoginButton extends Component {
     handleMenuOpen = event => this.setState({ menuAnchorEl: event.currentTarget });
     handleMenuClose = () => this.setState({ menuAnchorEl: null });
 
-    renderComponent() {
+    render() {
         const { authenticated, user, menuAnchorEl } = this.state;
 
         if (authenticated == null) {
