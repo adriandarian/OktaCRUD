@@ -62,7 +62,7 @@ class LoginButton extends Component {
                 <IconButton onClick={ this.handleMenuOpen } color="inherit">
                     <AccountCircle />
                 </IconButton>
-                <Menu anchorEl={ menuAnchorEl } anchorOrigin={ menuPosition } transformOrigin={ menuPosition } open={ menuAnchorEl } onClose={ this.handleMenuClose }>
+                <Menu anchorEl={ menuAnchorEl } anchorOrigin={ menuPosition } transformOrigin={ menuPosition } open={ !!menuAnchorEl } onClose={ this.handleMenuClose }>
                     <MenuItem onClick={ this.logout }>
                         <ListItemText primary="Logout" secondary={ user && user.name }/>
                     </MenuItem>
