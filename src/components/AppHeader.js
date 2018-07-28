@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     AppBar,
+    Button,
     Toolbar,
     Typography,
     withStyles,
@@ -20,7 +22,9 @@ const AppHeader = ({ classes }) => (
             <Typography variant="title" color="inherit">
                 Okta CRUD React App
             </Typography>
-            <div className={ classes.flex } />
+            <Button color="inherit" component={ Link } to="/">Home</Button>
+            <Button color="inherit" component={ Link } to="/posts">Posts Manager</Button>
+            <div className={classes.flex} />
             <LoginButton />
         </Toolbar>
     </AppBar>
