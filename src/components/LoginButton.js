@@ -64,7 +64,7 @@ class LoginButton extends Component {
                 </IconButton>
                 <Menu anchorEl={ menuAnchorEl } anchorOrigin={ menuPosition } transformOrigin={ menuPosition } open={ menuAnchorEl } onClose={ this.handleMenuClose }>
                     <MenuItem onClick={ this.logout }>
-                        <ListItemtext primary="Logout" secondary={ user && user.name }/>
+                        <ListItemText primary="Logout" secondary={ user && user.name }/>
                     </MenuItem>
                 </Menu>
             </div>

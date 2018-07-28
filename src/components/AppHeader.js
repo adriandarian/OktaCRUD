@@ -14,7 +14,7 @@ const styles = {
 }
 
 
-const AppHeader = () => (
+const AppHeader = ({ classes }) => (
     <AppBar position="static">
         <Toolbar>
             <Typography variant="title" color="inherit">
